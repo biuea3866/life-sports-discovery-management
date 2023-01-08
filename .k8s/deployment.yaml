@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: life-sports-discovery-management
+  labels:
+    app: discovery-management
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: discovery-management
+  template:
+    metadata:
+      labels:
+        app: discovery-management
+    spec:
+      containers:
+        - name: discovery-management
+          image: biuea/life-sports-discovery-management
+          ports:
+            - containerPort: 8000
