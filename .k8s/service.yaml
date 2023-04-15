@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: life-sports-discovery-management
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
   - port: 8761
+    targetPort: 8761
     protocol: TCP
   clusterIP: 10.104.34.38
   selector:
