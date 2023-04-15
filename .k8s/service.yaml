@@ -4,8 +4,8 @@ metadata:
   name: life-sports-discovery-management
 spec:
   ports:
-  - port: 8000
+  - port: 8761
     protocol: TCP
-    targetPort: 8000
+    targetPort: 8761
   selector:
     run: life-sports-discovery-management
