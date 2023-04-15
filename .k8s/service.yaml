@@ -7,7 +7,6 @@ spec:
   ports:
   - port: 8761
     protocol: TCP
-    targetPort: 8761
   clusterIP: 10.104.34.38
   selector:
     run: life-sports-discovery-management
