@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: life-sports-discovery-management
 spec:
-  type: NodePort
+  type: LoadBalancer
   ports:
   - port: 8761
     protocol: TCP
