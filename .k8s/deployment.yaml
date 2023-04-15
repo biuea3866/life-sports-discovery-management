@@ -5,7 +5,7 @@ metadata:
   labels:
     app: life-sports-discovery-management
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: life-sports-discovery-management
