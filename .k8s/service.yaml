@@ -1,15 +1,11 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-    app: life-sports-discovery-management
   name: life-sports-discovery-management
-  namespace: life-sports
 spec:
   ports:
-    - port: 8000
-      protocol: TCP
-      targetPort: 8000
-    selector:
-      app: life-sports-discovery-management
-    type: NodePort
+  - port: 8000
+    protocol: TCP
+    targetPort: 8000
+  selector:
+    run: life-sports-discovery-management
